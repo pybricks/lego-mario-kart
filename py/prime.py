@@ -8,7 +8,15 @@ from mario import Mario
 from config import CHANNEL, MARIO_TYPE
 
 hub = PrimeHub(broadcast_channel=CHANNEL)
-light = ColorLightMatrix(Port.B)
+
+try:
+    light = ColorLightMatrix(Port.B)
+    light_on = light.on
+except OSError:
+    print("No Color Light Matrix found. Using hub light.")
+
+    async def light_on(color):
+        hub.light.on(color)
 
 mario = Mario(MARIO_TYPE)
 
@@ -31,7 +39,7 @@ async def main():
         letter = repr(color_now)[6]
 
         await hub.ble.broadcast(letter)
-        await light.on(color_now)
+        await light_on(color_now)
 
         if color_last == Color.GREEN and color_now == Color.VIOLET:
             count -= 1
