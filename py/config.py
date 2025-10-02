@@ -1,0 +1,8 @@
+# Pybricks BLE Broadcast channel used between the hubs
+CHANNEL = 45
+
+# Mario Hub type: MARIO, LUIGI, or PEACH.
+MARIO_TYPE = "MARIO"
+
+# Bluetooth name of the remote. Choose None if any remote may be used.
+REMOTE_NAME = MARIO_TYPE

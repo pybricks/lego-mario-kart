@@ -2,6 +2,8 @@
 
 ![](./assets/mario1.jpg)
 
+Watch the [video here][0].
+
 # How does it work?
 
 [Pybricks][1] can run on any re-programmable LEGO hub. Hubs that run Pybricks can communicate by broadcasting over BLE.
@@ -42,7 +44,8 @@ You don't need the SPIKE Prime Hub or the SPIKE Essential Hub. You could also us
 # Instructions
 
 - Build a kart with SPIKE Essential with two motors.
-- [Install Pybricks][3] on both the SPIKE Prime Hub and the SPIKE Essential Hub.
+- Build a track with color markers and obstacles.
+- [Install the latest nightly Pybricks firmware][3] on both the SPIKE Prime Hub and the SPIKE Essential Hub.
 - [Upload][4] all `.py` files in this repo to Pybricks Code.
 - Run `prime.py` on the SPIKE Prime Hub.
 - Run `kart.py` on the SPIKE Essential Hub.
@@ -50,9 +53,10 @@ You don't need the SPIKE Prime Hub or the SPIKE Essential Hub. You could also us
 - Turn on Mario and press the Bluetooth button to enter connect mode.
 - Play!
 
+[0]: https://www.youtube.com/watch?v=A0NyhdayHJs
 [1]: https://pybricks.com/
 [2]: https://lego.github.io/lego-ble-wireless-protocol-docs/
-[3]: https://pybricks.com/learn/
+[3]: https://pybricks.com/learn/getting-started/install-pybricks/#trying-the-nightly-version-optional
 [4]: https://pybricks.com/learn/getting-started/pybricks-environment/#managing-program-files
 
 -------
