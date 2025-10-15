@@ -5,7 +5,7 @@ from pybricks.tools import wait, run_task, multitask
 
 from mario import Mario
 
-from config import CHANNEL, MARIO_TYPE
+from config import CHANNEL, MARIO_TYPE, PAIR
 
 hub = PrimeHub(broadcast_channel=CHANNEL)
 
@@ -18,7 +18,7 @@ except OSError:
     async def light_on(color):
         hub.light.on(color)
 
-mario = Mario(MARIO_TYPE)
+mario = Mario(MARIO_TYPE, PAIR)
 
 
 async def main():

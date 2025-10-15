@@ -6,3 +6,6 @@ MARIO_TYPE = "MARIO"
 
 # Bluetooth name of the remote. Choose None if any remote may be used.
 REMOTE_NAME = MARIO_TYPE
+
+# Whether to use pairing for connecting (needed if Mario was updated.)
+PAIR = True

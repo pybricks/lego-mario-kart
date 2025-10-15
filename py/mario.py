@@ -79,7 +79,7 @@ def hsv_to_color(hsv):
 class Mario():
     """Class to connect to the Duplo train and send commands to it."""
 
-    def __init__(self, hub_type):
+    def __init__(self, hub_type, pair):
         print(f"Searching for the {hub_type} Hub. Make sure it is on and in pairing mode.")
 
         if hub_type == "MARIO":
@@ -91,7 +91,7 @@ class Mario():
         else:
             raise ValueError("Invalid Hub")
 
-        self.device = LWP3Device(hub_id, name=None, timeout=None, num_notifications=8)
+        self.device = LWP3Device(hub_id, name=None, timeout=None, num_notifications=2, pair=pair)
 
         # Subscribe to color sensor RGB
         self.device.write(bytes([0x0a, 0x00, 0x41, PORT_COLOR_SENSOR, MODE_RGB, 0x01, 0x00, 0x00, 0x00, 0x01]))
