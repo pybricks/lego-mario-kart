@@ -1,147 +1,52 @@
-from pybricks.iodevices import LWP3Device
-from pybricks.parameters import Color
-from pybricks.tools import StopWatch, wait
+# pybricks blocks file:{"blocks":{"languageVersion":0,"blocks":[{"type":"blockGlobalSetup","id":"bjK,wS1MYO7aiYkFSwd{","x":0,"y":0,"deletable":false,"next":{"block":{"type":"variables_set_remote","id":"_o^!vk6nr7C*Zu;ZpFi+","extraState":{"optionLevel":1},"fields":{"VAR":{"id":"mjl12--uyjj5QHZ{,-.u"},"METHOD":"CONNECT_NAME"},"inputs":{"SCANNAME":{"shadow":{"type":"text","id":"JJ{@/PWff54=Ez$!!jWl","fields":{"TEXT":"Luigi"}}}},"next":{"block":{"type":"variables_setup_imported_function","id":"O{r}tL;M*-|_8DEdwhl`","fields":{"FROM_MODULE":"pybricks.pupdevices","VAR":{"id":"r[R-d]36v;[doCdCa^?:"}},"next":{"block":{"type":"variables_setup_object_instance","id":"lu6|z0wQq!Sul7j)|HlV","extraState":{"optionLevel":1},"fields":{"VAR":{"id":"L]~)/4}x]mXopNv6?l6S"},"CLASS_NAME":"MarioHub"},"inputs":{"ARG0":{"shadow":{"type":"blockMathNumber","id":"q3s|Y0Tjd~htA1VV+T2h","fields":{"NUM":0}},"block":{"type":"blockTextLiteral","id":"Zh=36DmpE7[YO@ngU|%%","fields":{"TEXT":"LEGO Luigi"}}}},"next":{"block":{"type":"variables_set_motor","id":"*+ynK*A0RLYA%xafV8R(","fields":{"VAR":{"id":"0Ly(x7#)y8C]Znh/{eJ%"}},"inputs":{"PORT":{"shadow":{"type":"blockParametersPort","id":"]w`j`/BCjBt-~hZe/9[)","fields":{"NAME":"A"}}},"POSITIVE_DIRECTION":{"shadow":{"type":"blockParametersDirection","id":"[sRl=e1L5.T37?V#Y:++","fields":{"SELECTION":"Direction.COUNTERCLOCKWISE"}}}},"next":{"block":{"type":"variables_set_motor","id":"Y8ZJ-,F/Pd|hv;t.7T*K","fields":{"VAR":{"id":")CO5nh,]FGZM0:FP2Gh="}},"inputs":{"PORT":{"shadow":{"type":"blockParametersPort","id":"-#SPUgZtu%V,`WpS7L_=","fields":{"NAME":"B"}}},"POSITIVE_DIRECTION":{"shadow":{"type":"blockParametersDirection","id":"s7e6jRwt#+KyZ4/f/918","fields":{"SELECTION":"Direction.CLOCKWISE"}}}},"next":{"block":{"type":"variables_set_drive_base","id":":@CDDA{%?RfG{J0@={16","fields":{"VAR":{"id":"e`}|B[7/v$xRt8(5D`~x"}},"inputs":{"VAR":{"shadow":{"type":"variables_get_motor_device","id":"uh`o0bO-U?XJ`!Okgt{F","fields":{"VAR":{"id":"0Ly(x7#)y8C]Znh/{eJ%","name":"left","type":"Motor"}}}},"VAR2":{"shadow":{"type":"variables_get_motor_device","id":"AVUNMFMpGik4AoF99mjm","fields":{"VAR":{"id":")CO5nh,]FGZM0:FP2Gh=","name":"right","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"unit_distance","id":"Wy:xVn?h}mM.[f3MO{P~","fields":{"VALUE0":56}}},"VALUE1":{"shadow":{"type":"unit_distance","id":"y[^c?,MZw_vU#V[F:un^","fields":{"VALUE0":114}}}},"next":{"block":{"type":"variables_setup_any","id":"uq3u/bPoW0fWYu+hyDVR","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV"}},"inputs":{"VALUE0":{"shadow":{"type":"blockMathNumber","id":"Rkz@{_E7;iM^F$OZf@:)","fields":{"NUM":400}}}},"next":{"block":{"type":"variables_set_stopwatch","id":"#vw6IKK64]ST#ffJ!qWX","fields":{"VAR":{"id":"ZNYsW,l|n6pA1zZ(,of@"}},"next":{"block":{"type":"variables_set_stopwatch","id":"UQKQ|+u`JdBvGL.5Kx_+","fields":{"VAR":{"id":"-UJn@Nqr}L=X*r!eb#?;"}},"next":{"block":{"type":"variables_set_stopwatch","id":"Y`hV*X{vq@eA(B+/OQ-Y","fields":{"VAR":{"id":"DKb?zd%/V498`A(:^N|A"}}}}}}}}}}}}}}}}}}}}}}},{"type":"blockGlobalStart","id":"3tJe|AWl0baN(wH9a$@.","x":0,"y":560,"deletable":false,"next":{"block":{"type":"blockDriveBaseConfigure","id":"e3dV+SNu7dx=%GTf86+V","extraState":{"optionLevel":2},"fields":{"METHOD":"DRIVEBASE_TURN_RATE"},"inputs":{"VAR":{"shadow":{"type":"variables_get_drive_base_device","id":"4_osBrJ~B2r~B%H:}#,4","fields":{"VAR":{"id":"e`}|B[7/v$xRt8(5D`~x","name":"robot","type":"DriveBase"}}}},"ARG0":{"shadow":{"type":"unit_angularVelocity","id":"x/8u#;}S(Zmq)Tny~n/Z","fields":{"VALUE0":600}}}},"next":{"block":{"type":"blockDriveBaseConfigure","id":"{CQ9+`,_xnp6LW@QM{Hg","extraState":{"optionLevel":4},"fields":{"METHOD":"DRIVEBASE_TURN_ACCELERATION"},"inputs":{"VAR":{"shadow":{"type":"variables_get_drive_base_device","id":"`CG,bS|j)eJR6}o*,HK5","fields":{"VAR":{"id":"e`}|B[7/v$xRt8(5D`~x","name":"robot","type":"DriveBase"}}}},"ARG0":{"shadow":{"type":"unit_angularAcceleration","id":"hFoYN.,igp0`~0TJ;*c!","fields":{"VALUE0":5000}}}},"next":{"block":{"type":"blockFlowWhile","id":"U;GG[7[BTuHF~;wbw8_2","fields":{"MODE":"WHILE"},"inputs":{"BOOL":{"shadow":{"type":"blockLogicTrue","id":"DQL+M20BW2exE4ZXXEph"}},"DO":{"block":{"type":"blockComment","id":"WVS;^Q)WpV9%lS^!_y~{","fields":{"FIELDNAME":"Left wheel."},"next":{"block":{"type":"blockIfElse","id":"g.:OMr5!xh#~J~@S|V[A","extraState":{"optionLevel":2},"inputs":{"IF0":{"shadow":{"type":"blockLogicTrue","id":"yi7W2J%:W/(znRWcvcri"},"block":{"type":"blockButtonIsPressed","id":"Syj`e`y37[65a6Dx6MxA","inputs":{"VAR":{"shadow":{"type":"variables_get_keypad","id":"0T-e[8+j#LF#6o?{ac5x","fields":{"VAR":{"id":"mjl12--uyjj5QHZ{,-.u","name":"remote","type":"Remote"}}}},"VALUE0":{"shadow":{"type":"blockParametersButton","id":"8gJCugSA;.eMS`zPg:yA","fields":{"VALUE":"LEFT_PLUS"}}}}}},"DO0":{"block":{"type":"blockMotorRun","id":";,{BbM5d]pyEC}@Z6AJ;","extraState":{"optionLevel":0},"fields":{"METHOD":"MOTOR_RUN_FOREVER"},"inputs":{"VAR":{"shadow":{"type":"variables_get_motor_device","id":"[Z^^!l{(+8{Sv8hS1Xx6","fields":{"VAR":{"id":"0Ly(x7#)y8C]Znh/{eJ%","name":"left","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"unit_angularVelocity","id":"cm%rf:x7v`Bb?E~hu:,R","fields":{"VALUE0":400}},"block":{"type":"blockVariableGetValue","id":"ou3%dj?}hEd9/mhpmVG%","inputs":{"VAR":{"shadow":{"type":"variables_get_any","id":"NcemUi@LdN`+!Za/yoHV","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV","name":"speed","type":"Any"}}}}}}}}}},"IF1":{"shadow":{"type":"blockLogicTrue","id":"~Jb$xBpMxRocv!rlFQil"},"block":{"type":"blockButtonIsPressed","id":"`*/=}*QvHWXhw|:*KMwT","inputs":{"VAR":{"shadow":{"type":"variables_get_keypad","id":"/-fkn1^mn9w1{q_[f*b~","fields":{"VAR":{"id":"mjl12--uyjj5QHZ{,-.u","name":"remote","type":"Remote"}}}},"VALUE0":{"shadow":{"type":"blockParametersButton","id":"kl|_SwuzcDHX/TO`zHx]","fields":{"VALUE":"LEFT_MINUS"}}}}}},"DO1":{"block":{"type":"blockMotorRun","id":"0e4.m*U=|Ml(!YS~_kun","extraState":{"optionLevel":0},"fields":{"METHOD":"MOTOR_RUN_FOREVER"},"inputs":{"VAR":{"shadow":{"type":"variables_get_motor_device","id":"I?JQ3WD:CC3M-a(H[2my","fields":{"VAR":{"id":"0Ly(x7#)y8C]Znh/{eJ%","name":"left","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"unit_angularVelocity","id":"EhhjwjO.V,ujVYX+O6Tg","fields":{"VALUE0":-400}},"block":{"type":"blockMathArithmetic","id":"Y{F6DF0i1_rA/|D*:H0L","fields":{"OP":"MINUS"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"~DRe8t~1aYk:Z^00:GQn","fields":{"NUM":0}}},"B":{"shadow":{"type":"blockMathNumber","id":"uS/(l.ijn1lphd/C8Ty2","fields":{"NUM":1}},"block":{"type":"blockVariableGetValue","id":"|WqOAYut7x{C#m7+%AGp","inputs":{"VAR":{"shadow":{"type":"variables_get_any","id":"UjaSF*FvH59Gv5f:;-bP","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV","name":"speed","type":"Any"}}}}}}}}}}}}},"ELSE":{"block":{"type":"blockMotorStop","id":"OM/`glUozE]$Kpx?aWJ1","inputs":{"VAR":{"shadow":{"type":"variables_get_simple_motor_device","id":"7NL0``,Pp7UcYgDY}E@U","fields":{"VAR":{"id":"0Ly(x7#)y8C]Znh/{eJ%","name":"left","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"parameters_stop_3","id":"uh)v!mxV3*L15i}80+@l","fields":{"VALUE":"Stop.COAST"}}}}}}},"next":{"block":{"type":"blockComment","id":"satg]If{;lipP6kTw7DL","fields":{"FIELDNAME":"Right wheel."},"next":{"block":{"type":"blockIfElse","id":"a$s2,vBZMAL[n8CUw@T!","extraState":{"optionLevel":2},"inputs":{"IF0":{"shadow":{"type":"blockLogicTrue","id":"yi7W2J%:W/(znRWcvcri"},"block":{"type":"blockButtonIsPressed","id":"fyDmg_`0KKHDz*1s/URm","inputs":{"VAR":{"shadow":{"type":"variables_get_keypad","id":"2RxS$u.W[T?ilh-rV2C:","fields":{"VAR":{"id":"mjl12--uyjj5QHZ{,-.u","name":"remote","type":"Remote"}}}},"VALUE0":{"shadow":{"type":"blockParametersButton","id":"V8H6{$%4lLN6#rR{xI?W","fields":{"VALUE":"RIGHT_PLUS"}}}}}},"DO0":{"block":{"type":"blockMotorRun","id":"N]yva43p-G^49UY7~vb=","extraState":{"optionLevel":0},"fields":{"METHOD":"MOTOR_RUN_FOREVER"},"inputs":{"VAR":{"shadow":{"type":"variables_get_motor_device","id":"Ab8?}z^F@eQ_;(W`u-nA","fields":{"VAR":{"id":")CO5nh,]FGZM0:FP2Gh=","name":"right","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"unit_angularVelocity","id":"CS*~+Y{JvD`7ZVy=h0li","fields":{"VALUE0":400}},"block":{"type":"blockVariableGetValue","id":"SSMSdA/r6OEzbwT_;pds","inputs":{"VAR":{"shadow":{"type":"variables_get_any","id":"n]82H}Gsx_]EZ5+J]sEq","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV","name":"speed","type":"Any"}}}}}}}}}},"IF1":{"shadow":{"type":"blockLogicTrue","id":"~Jb$xBpMxRocv!rlFQil"},"block":{"type":"blockButtonIsPressed","id":"/?Hq6]5CGakHA`n9+hS{","inputs":{"VAR":{"shadow":{"type":"variables_get_keypad","id":"u+Nlg0sI1V6oEm}3Lwxh","fields":{"VAR":{"id":"mjl12--uyjj5QHZ{,-.u","name":"remote","type":"Remote"}}}},"VALUE0":{"shadow":{"type":"blockParametersButton","id":"NKh)wjM;S{u;4m8sle0^","fields":{"VALUE":"RIGHT_MINUS"}}}}}},"DO1":{"block":{"type":"blockMotorRun","id":"y#nzVoh]?d9w4Ot][nU7","extraState":{"optionLevel":0},"fields":{"METHOD":"MOTOR_RUN_FOREVER"},"inputs":{"VAR":{"shadow":{"type":"variables_get_motor_device","id":"~%Zm9:j$rbJpL~NWqPS{","fields":{"VAR":{"id":")CO5nh,]FGZM0:FP2Gh=","name":"right","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"unit_angularVelocity","id":"UF#}xo+b0({36-0gk~F2","fields":{"VALUE0":-400}},"block":{"type":"blockMathArithmetic","id":"@)tvo?;pF}.GeZihUw]M","fields":{"OP":"MINUS"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"2qb$^abgEta;E-:*GUZA","fields":{"NUM":0}}},"B":{"shadow":{"type":"blockMathNumber","id":"uS/(l.ijn1lphd/C8Ty2","fields":{"NUM":1}},"block":{"type":"blockVariableGetValue","id":"%Kgs#sIKpF@iQ=K5kho;","inputs":{"VAR":{"shadow":{"type":"variables_get_any","id":"R?hS%gMNjp300Gyu3=^R","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV","name":"speed","type":"Any"}}}}}}}}}}}}},"ELSE":{"block":{"type":"blockMotorStop","id":"Cq,[3t2${]/dv2|hv[%.","inputs":{"VAR":{"shadow":{"type":"variables_get_simple_motor_device","id":"|VfV.^wM3Wx[!!dx,+]g","fields":{"VAR":{"id":")CO5nh,]FGZM0:FP2Gh=","name":"right","type":"Motor"}}}},"VALUE0":{"shadow":{"type":"parameters_stop_3","id":"739.y%!JO@yt^xhwIWG7","fields":{"VALUE":"Stop.COAST"}}}}}}},"next":{"block":{"type":"blockComment","id":"_u3RF/}a:X)A_)$@FXoq","fields":{"FIELDNAME":"Speed boost"},"next":{"block":{"type":"blockIfElse","id":"b~vvjWNIUV(S30Dp`ph6","extraState":{"optionLevel":0},"inputs":{"IF0":{"shadow":{"type":"blockLogicTrue","id":"W)(:F=6FNoSA45)`){xw"},"block":{"type":"blockLogicCompare","id":"QAwQsq^96$kx6dkcQZcR","fields":{"OP1":"EQ"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"X~xe|mL0}EzVyQXyjm?^","fields":{"NUM":0}},"block":{"type":"blockObjectInstanceCallValue","id":"3@!0!n~ZG6G~(B{Ov52i","extraState":{"optionLevel":0},"fields":{"CALL_TYPE":"CLASS_CALL_METHOD_SYNC","METHOD":"color"},"inputs":{"VAR":{"shadow":{"type":"variables_get_object_instance","id":"3Ce_G!nE](z,leP`hW`G","fields":{"VAR":{"id":"L]~)/4}x]mXopNv6?l6S","name":"mario","type":"ObjectInstance"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"uJ1HL7U1E*/TFE#D5Hw[","fields":{"NUM":0}},"block":{"type":"variables_get_color","id":"8NB8Jjn+EM_5c$7GV~BJ","fields":{"COLOUR":"#0000ff","VAR":{"id":"mn?gcW5iYD4k;{Ecu{Jv"}}}}}}},"DO0":{"block":{"type":"blockStopWatchDo","id":"D(u~+5PUd~*ThX:}|l6I","extraState":{"optionLevel":0},"fields":{"METHOD":"STOPWATCH_RESET"},"inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"aHfd*Czt^3iEiEV)EM]q","fields":{"VAR":{"id":"ZNYsW,l|n6pA1zZ(,of@","name":"boost","type":"StopWatch"}}}}}}}},"next":{"block":{"type":"blockVariableSetValue","id":"ed.dzeO1dJw^4|^E,XNo","inputs":{"VAR":{"shadow":{"type":"variables_get_any","id":"Mz})niEL}]cLSU/fDhqJ","fields":{"VAR":{"id":"E8Y~wz^%W?jCYaY%YUbV","name":"speed","type":"Any"}}}},"VALUE0":{"shadow":{"type":"blockMathNumber","id":"8G%4r42I7a(?8Z5}[l@L","fields":{"NUM":0}},"block":{"type":"blockLogicTernary","id":"bT?l}2Y~A{~6%w#[D~ME","inputs":{"THEN":{"shadow":{"type":"blockMathNumber","id":"Xl3M4%`B;%G.XCm~Kh48","fields":{"NUM":750}}},"IF":{"shadow":{"type":"blockLogicTrue","id":".744auhb-1:fg21k+3`w"},"block":{"type":"blockLogicCompare","id":"Dj#+X)daw:fHlODqX9!r","fields":{"OP1":"LTE"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"5-VkSf21fpn,TKNN0/g#","fields":{"NUM":3}},"block":{"type":"blockStopWatchTime","id":"4M{C|so~_/wOF{O}3[Ii","inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"gN6$vUI:!mzP}+K#]7QL","fields":{"VAR":{"id":"ZNYsW,l|n6pA1zZ(,of@","name":"boost","type":"StopWatch"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"jzaN_w4[L,B[_Kc1k]@K","fields":{"NUM":500}}}}}},"ELSE":{"shadow":{"type":"blockMathNumber","id":"f{-|]Qn%O:Mn.:|08doY","fields":{"NUM":400}}}}}}},"next":{"block":{"type":"blockComment","id":"+F:0T=#_{z_aCOGq(B(j","fields":{"FIELDNAME":"Lava"},"next":{"block":{"type":"blockIfElse","id":"{(:Z7X{dyhsxAS/hgYoC","extraState":{"optionLevel":0},"inputs":{"IF0":{"shadow":{"type":"blockLogicTrue","id":"W)(:F=6FNoSA45)`){xw"},"block":{"type":"blockLogicOperation","id":"IWSzpYg_Y7,S|tr0y3j{","fields":{"OP":"AND"},"inputs":{"A":{"shadow":{"type":"blockLogicTrue","id":"$)TT2rxFq9ja4gjs4ONH"},"block":{"type":"blockLogicCompare","id":"UwA6q52m;/s#~`F8IL#,","fields":{"OP1":"GTE"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"5-VkSf21fpn,TKNN0/g#","fields":{"NUM":3}},"block":{"type":"blockStopWatchTime","id":"$R?fcR%wi[jZw}zS~{;m","inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"N1Yl:2jdp+i;rOy`6sgq","fields":{"VAR":{"id":"-UJn@Nqr}L=X*r!eb#?;","name":"lava","type":"StopWatch"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"^fYhAFGwFsR#o6S9S/Sn","fields":{"NUM":3000}}}}}},"B":{"shadow":{"type":"blockLogicTrue","id":"YPnY^BR8%XspQWtzFDan"},"block":{"type":"blockLogicCompare","id":"VEIg56i3%5CkLZJo2QtB","fields":{"OP1":"EQ"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"X~xe|mL0}EzVyQXyjm?^","fields":{"NUM":0}},"block":{"type":"blockObjectInstanceCallValue","id":"6#{D6w5mI0Jxtqpz.JMZ","extraState":{"optionLevel":0},"fields":{"CALL_TYPE":"CLASS_CALL_METHOD_SYNC","METHOD":"color"},"inputs":{"VAR":{"shadow":{"type":"variables_get_object_instance","id":"s}Au*1j,aVtY_?bRB3=]","fields":{"VAR":{"id":"L]~)/4}x]mXopNv6?l6S","name":"mario","type":"ObjectInstance"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"uJ1HL7U1E*/TFE#D5Hw[","fields":{"NUM":0}},"block":{"type":"variables_get_color","id":"X$_KSrPIt-GQY(`(vIZ0","fields":{"COLOUR":"#ff0000","VAR":{"id":"?IoWm74cllfSDTbA)FR["}}}}}}}}}},"DO0":{"block":{"type":"blockFlowRepeat","id":"pgZ6TpgC?@DCw5`?*p4H","inputs":{"TIMES":{"shadow":{"type":"blockMathNumber","id":"1UlfPRsc-=zzOEs%J[,b","fields":{"NUM":10}}},"DO":{"block":{"type":"blockDriveBaseMove","id":"MYa8%(t^%E;J_1~0z#6|","extraState":{"optionLevel":2},"fields":{"METHOD":"DRIVEBASE_MOVE_TURN","TARGET":"DRIVEBASE_MOVE_TURN_RELATIVE"},"inputs":{"VAR":{"shadow":{"type":"variables_get_drive_base_device","id":"zSL52GJ/%2)`D*]7x6yr","fields":{"VAR":{"id":"e`}|B[7/v$xRt8(5D`~x","name":"robot","type":"DriveBase"}}}},"ARG0":{"shadow":{"type":"unit_angle","id":"Y$rhI~zX!x|$l3uq}9#T","fields":{"VALUE0":90}},"block":{"type":"blockRandInt","id":"T$xNMY+S*;@@}zE#^3jW","inputs":{"FROM":{"shadow":{"type":"blockMathNumber","id":"O5qm3+LR*-l(]4Z)vT)2","fields":{"NUM":-40}}},"TO":{"shadow":{"type":"blockMathNumber","id":"/G3oSw-Cs(AB!6Wj/KL=","fields":{"NUM":40}}}}}},"THEN":{"shadow":{"type":"parameters_stop_4","id":"2FJb#IporO{h.MYoK4Zc","fields":{"VALUE":"Stop.HOLD"}}}}}}},"next":{"block":{"type":"blockStopWatchDo","id":"W]J=:e^-5Oq{7-cMG1CG","extraState":{"optionLevel":0},"fields":{"METHOD":"STOPWATCH_RESET"},"inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"1T(BYuIWYg0SML*0gBaA","fields":{"VAR":{"id":"-UJn@Nqr}L=X*r!eb#?;","name":"lava","type":"StopWatch"}}}}}}}}}},"next":{"block":{"type":"blockComment","id":"9El^MKOQs(j.6gY8n]Du","fields":{"FIELDNAME":"Banana"},"next":{"block":{"type":"blockIfElse","id":"-k}l,k(D,+]*UP=lt%?[","extraState":{"optionLevel":0},"inputs":{"IF0":{"shadow":{"type":"blockLogicTrue","id":"W)(:F=6FNoSA45)`){xw"},"block":{"type":"blockLogicOperation","id":"8Fh=T^_K,QKm_y0@Vg_0","fields":{"OP":"AND"},"inputs":{"A":{"shadow":{"type":"blockLogicTrue","id":"$)TT2rxFq9ja4gjs4ONH"},"block":{"type":"blockLogicCompare","id":"v/hE.m))h4z8-2=w=.?r","fields":{"OP1":"GTE"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"5-VkSf21fpn,TKNN0/g#","fields":{"NUM":3}},"block":{"type":"blockStopWatchTime","id":")x-n)!I2/Dd+]O%W^,+J","inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"N$I}8{LOz0_f:T)BQIS=","fields":{"VAR":{"id":"DKb?zd%/V498`A(:^N|A","name":"banana","type":"StopWatch"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"=NjYyP98-Yhne,7L#dh:","fields":{"NUM":1000}}}}}},"B":{"shadow":{"type":"blockLogicTrue","id":"YPnY^BR8%XspQWtzFDan"},"block":{"type":"blockLogicCompare","id":"j|Jj%d;hA-QFA!nde8IH","fields":{"OP1":"EQ"},"inputs":{"A":{"shadow":{"type":"blockMathNumber","id":"X~xe|mL0}EzVyQXyjm?^","fields":{"NUM":0}},"block":{"type":"blockObjectInstanceCallValue","id":"G*eC#!+K_oZT5|NdQW0]","extraState":{"optionLevel":0},"fields":{"CALL_TYPE":"CLASS_CALL_METHOD_SYNC","METHOD":"color"},"inputs":{"VAR":{"shadow":{"type":"variables_get_object_instance","id":"~DUqZLkPlk;Pt!]_An|j","fields":{"VAR":{"id":"L]~)/4}x]mXopNv6?l6S","name":"mario","type":"ObjectInstance"}}}}}}},"B":{"shadow":{"type":"blockMathNumber","id":"uJ1HL7U1E*/TFE#D5Hw[","fields":{"NUM":0}},"block":{"type":"variables_get_color","id":"+?l,n-A83H4l1$gzd%EH","fields":{"COLOUR":"#ffff00","VAR":{"id":"+dYVAp^qnMr}%?8-n|*!"}}}}}}}}}},"DO0":{"block":{"type":"blockDriveBaseMove","id":"bUh+9F~Z_xGm[,,46,Y{","extraState":{"optionLevel":2},"fields":{"METHOD":"DRIVEBASE_MOVE_TURN","TARGET":"DRIVEBASE_MOVE_TURN_RELATIVE"},"inputs":{"VAR":{"shadow":{"type":"variables_get_drive_base_device","id":":48+Vphq2p/!mgV98}H:","fields":{"VAR":{"id":"e`}|B[7/v$xRt8(5D`~x","name":"robot","type":"DriveBase"}}}},"ARG0":{"shadow":{"type":"unit_angle","id":"Y$rhI~zX!x|$l3uq}9#T","fields":{"VALUE0":90}},"block":{"type":"blockRandInt","id":"kQ*])PgyG*BT/;3HC=]|","inputs":{"FROM":{"shadow":{"type":"blockMathNumber","id":"`Q450}eyF_)lUbU(OoY;","fields":{"NUM":200}}},"TO":{"shadow":{"type":"blockMathNumber","id":"+Oq_H]tZ7yC3x8`DQpu0","fields":{"NUM":400}}}}}},"THEN":{"shadow":{"type":"parameters_stop_4","id":"+sk,f8_{f[e1aC9iCcVk","fields":{"VALUE":"Stop.HOLD"}}}},"next":{"block":{"type":"blockStopWatchDo","id":"_s](@P78^rX^acxbb]eh","extraState":{"optionLevel":0},"fields":{"METHOD":"STOPWATCH_RESET"},"inputs":{"VAR":{"shadow":{"type":"variables_get_stopwatch","id":"].ogt.}}`^9z#g*#3#/I","fields":{"VAR":{"id":"DKb?zd%/V498`A(:^N|A","name":"banana","type":"StopWatch"}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}]},"variables":[{"name":"red","id":"?IoWm74cllfSDTbA)FR[","type":"ColorDef"},{"name":"orange","id":",s4G%1{*nux8-6H(q2}6","type":"ColorDef"},{"name":"yellow","id":"+dYVAp^qnMr}%?8-n|*!","type":"ColorDef"},{"name":"green","id":"iFbEVp8]+PG^a8b~EU*{","type":"ColorDef"},{"name":"cyan","id":"-,(f{46`yEk,71gS:x}c","type":"ColorDef"},{"name":"blue","id":"mn?gcW5iYD4k;{Ecu{Jv","type":"ColorDef"},{"name":"violet","id":"BRwfSb/@{bDSC~7GEx3h","type":"ColorDef"},{"name":"magenta","id":"^N,XZX~2ldBY=)i8tnmD","type":"ColorDef"},{"name":"white","id":"FiFJg2vTbQ^k0CJaiR4x","type":"ColorDef"},{"name":"none","id":"@3NnMXIAzmry;7pejmfU","type":"ColorDef"},{"name":"mario","id":"L]~)/4}x]mXopNv6?l6S","type":"ObjectInstance"},{"name":"remote","id":"mjl12--uyjj5QHZ{,-.u","type":"Remote"},{"name":"left","id":"0Ly(x7#)y8C]Znh/{eJ%","type":"Motor"},{"name":"right","id":")CO5nh,]FGZM0:FP2Gh=","type":"Motor"},{"name":"robot","id":"e`}|B[7/v$xRt8(5D`~x","type":"DriveBase"},{"name":"speed","id":"E8Y~wz^%W?jCYaY%YUbV","type":"Any"},{"name":"MarioHub","id":"r[R-d]36v;[doCdCa^?:","type":"FunctionImported"},{"name":"boost","id":"ZNYsW,l|n6pA1zZ(,of@","type":"StopWatch"},{"name":"lava","id":"-UJn@Nqr}L=X*r!eb#?;","type":"StopWatch"},{"name":"banana","id":"DKb?zd%/V498`A(:^N|A","type":"StopWatch"}],"info":{"type":"pybricks","version":"2.1.0"},"workspaceOptions":{"scrollX":241.80691017364643,"scrollY":51.98920059015862,"scale":0.8910639697301522}}
+from pybricks.parameters import Button, Color, Direction, Port, Stop
+from pybricks.pupdevices import Motor, Remote
+from pybricks.robotics import DriveBase
+from pybricks.tools import StopWatch
+from urandom import randint
 
-from micropython import const
-from ustruct import unpack
+from pybricks.pupdevices import MarioHub
 
-HUB_ID_MARIO = const(0x43)
-HUB_ID_LUIGI = const(0x44)
-HUB_ID_PEACH = const(0x45)  # Unconfirmed, untested
-
-PORT_VALUE_MSG = const(0x45)
-PORT_COLOR_SENSOR = const(0x01)
-MODE_RGB = const(0x01)
-
-RGB_MAX_V = const(220)
-
-
-def rgb_to_hsv(r, g, b):
-
-    if r > RGB_MAX_V:
-        r = RGB_MAX_V
-    if g > RGB_MAX_V:
-        g = RGB_MAX_V
-    if b > RGB_MAX_V:
-        b = RGB_MAX_V
-
-    rgb_max = max([r, g, b])
-    rgb_min = min([r, g, b])
-    chroma = rgb_max - rgb_min
-
-    h = 0
-    s = 0
-    v = rgb_max * 100 // RGB_MAX_V
-
-    if chroma > 0:
-
-        if rgb_max == r:
-            x = g
-            y = b
-            z = 0
-        elif rgb_max == g:
-            x = b
-            y = r
-            z = 120
-        else:
-            x = r
-            y = g
-            z = 240
-        h = 60 * (x - y) // chroma + z
-        if h < 0:
-            h += 360
-        s = 100 * chroma // rgb_max
-
-    return h, s, v
+# Set up.
+remote = Remote('Luigi', timeout=None)
+mario = MarioHub('LEGO Luigi')
+left = Motor(Port.A, Direction.COUNTERCLOCKWISE)
+right = Motor(Port.B, Direction.CLOCKWISE)
+robot = DriveBase(left, right, 56, 114)
+speed = 400
+boost = StopWatch()
+lava = StopWatch()
+banana = StopWatch()
 
 
-def hsv_to_color(hsv):
-
-    h, s, v = hsv
-
-    if s < 15 or v < 30:
-        return Color.NONE
-
-    if h > 330 or h < 20:
-        return Color.RED
-    if h < 75:
-        return Color.YELLOW
-    if h < 190:
-        return Color.GREEN
-    if h < 250 and s > 60:
-        return Color.BLUE
-    if s < 50:
-        return Color.VIOLET
-
-    return Color.NONE
-
-
-class Mario():
-    """Class to connect to the Duplo train and send commands to it."""
-
-    def __init__(self, hub_type, pair):
-        print(f"Searching for the {hub_type} Hub. Make sure it is on and in pairing mode.")
-
-        if hub_type == "MARIO":
-            hub_id = HUB_ID_MARIO
-        elif hub_type == "LUIGI":
-            hub_id = HUB_ID_LUIGI
-        elif hub_type == "PEACH":
-            hub_id = HUB_ID_PEACH
-        else:
-            raise ValueError("Invalid Hub")
-
-        self.device = LWP3Device(hub_id, name=None, timeout=None, num_notifications=2, pair=pair)
-
-        # Subscribe to color sensor RGB
-        self.device.write(bytes([0x0a, 0x00, 0x41, PORT_COLOR_SENSOR, MODE_RGB, 0x01, 0x00, 0x00, 0x00, 0x01]))
-
-        self.hsv = (0, 0, 0)
-        self.color_last = Color.NONE
-        self.color_stable = Color.NONE
-        self.color_count = 0
-        self.timer = StopWatch()
-        self.last_color_time = 0
-
-        print("Connected!")
-
-    def parse_input(self):
-
-        # Go through all buffered LWP3 notifications
-        while (data := self.device.read()) is not None:
-
-            # Skip non-port data.
-            if len(data) < 4 or data[2] != PORT_VALUE_MSG:
-                continue
-
-            # Skip data that that doesn't look like color sensor values.
-            if data[3] != PORT_COLOR_SENSOR or len(data) != 7:
-                continue
-
-            # Convert instantaneous measurement to HSV
-            r, g, b = unpack("<BBB", data[4:7])
-            self.hsv = rgb_to_hsv(r, g, b)
-            measured_color = hsv_to_color(self.hsv)
-
-            # Keep track of color over time for better stability
-            self.timer.reset()
-            if measured_color == self.color_last:
-                self.color_count += 1
-            else:
-                self.color_last = measured_color
-                self.color_count = 0
-
-            if self.color_count > 0:
-                self.color_stable = self.color_last
-
-    def color(self):
-        # Counting successive matches increases confidence, but if measurements
-        # are stationary we get no new data, which also means it is stable.
-        if self.timer.time() > 100:
-            self.color_stable = self.color_last
-        return self.color_stable
-
-    async def background_task(self):
-        while True:
-            self.parse_input()
-            await wait(0)
+# The main program starts here.
+robot.settings(turn_rate=600)
+robot.settings(turn_acceleration=5000)
+while True:
+    # Left wheel.
+    if Button.LEFT_PLUS in remote.buttons.pressed():
+        left.run(speed)
+    elif Button.LEFT_MINUS in remote.buttons.pressed():
+        left.run(0 - speed)
+    else:
+        left.stop()
+    # Right wheel.
+    if Button.RIGHT_PLUS in remote.buttons.pressed():
+        right.run(speed)
+    elif Button.RIGHT_MINUS in remote.buttons.pressed():
+        right.run(0 - speed)
+    else:
+        right.stop()
+    # Speed boost
+    if mario.color() == Color.BLUE:
+        boost.reset()
+    speed = 750 if boost.time() <= 500 else 400
+    # Lava
+    if lava.time() >= 3000 and mario.color() == Color.RED:
+        for count in range(10):
+            robot.turn(randint(-40, 40))
+        lava.reset()
+    # Banana
+    if banana.time() >= 1000 and mario.color() == Color.YELLOW:
+        robot.turn(randint(200, 400))
+        banana.reset()
